@@ -19,7 +19,7 @@ BUILDING AND RUNNING
 Requirements : - Linux machine
                - Google test framework installed (gtest) needed for tests only
 
-To build the program, simply type "make" in the current directory. The executable "shortestPath" will be created as well as a test executable "testShortestPath" which uses the Google test framework.
+To build the program, simply type "make" in the current directory. The executable "shortestPath" will be created as well as a test executable "testShortestPath" which uses the Google test framework. To build the main program only, type "make main".
 
 To run the program, simply launch the executable "shortestPath" and specify the required parameters:
     Usage : ./shortestPath start end <path/to/dictionnary> [-sorted]
