@@ -10,8 +10,6 @@ int usage( ) {
 }
 
 int main( int argc, char *argv[]) {
-    cout << "eee" << endl;
-    return 0;
     if ( argc < 4 || argc > 5 ) {
         return usage();
     }
