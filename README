@@ -1,0 +1,34 @@
+------------
+INTRODUCTION
+------------
+
+The piece of code I chose to show you requires the modeling of an optimization problem and the study of abstract algorithms. This way, it can hopefully provide an insight of the optimization techniques I use while coding, as well as my algorithmics skills. I chose the C++ language for its efficiency, readability, portability, and last but not least because I apply for a C++ developer position.
+
+--------------------------
+DESCRIPTION OF THE PROGRAM
+--------------------------
+
+The purpose of this program is to find the shortest sequence of words between a 'start' word and an 'end' word by changing exactly 1 letter at a time.
+
+For that purpose, a dictionary must be loaded first, and both words must be given in argument.
+
+--------------------
+BUILDING AND RUNNING
+--------------------
+
+Requirements : - Linux machine
+               - Google test framework installed (gtest) needed for tests only
+
+To build the program, simply type "make" in the current directory. The executable "shortestPath" will be created as well as a test executable "testShortestPath" which uses the Google test framework.
+
+To run the program, simply launch the executable "shortestPath" and specify the required parameters:
+    Usage : ./shortestPath start end <path/to/dictionnary> [-sorted]
+The "-sorted" option allows the user to specify that the input dictionnary is sorted in order to increase the performance of the program (dichotomic search instead of llinear search).
+For example, one can run "./shortestPath weak good data/dict4 -sorted"
+
+----------------------
+ADDITIONAL INFORMATION
+----------------------
+
+In the header files, I also provide functions to save/load the internal graph structure so that we do not have to recompute it every time. The file format I use is compliant to the "DOT" format, therefore we can print nice graphs to visualize the inner structure with a tool such as "GraphViz".
+
